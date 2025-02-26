@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escuela Ketoret Worldwide</title>
+    <title>Escuela Musical Cristiana</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
         <div class="container">
             <h2>Bienvenidos</h2>
             <p>Ketoret Worldwide ofrece su escuela formativa que busca capacitar músicos con excelencia tanto técnica como espiritual. 
-                Abrimos nuestras puertas y queremos invitarte a ser parte de nuestra comunidad. Basaremos nuestra enseñanza en tres aspectos: Instrumento, Teoria y Doctrina. ¡No te lo puedes perder!</p>
+                Abrimos nuestras puertas y queremos invitarte a ser parte de nuestra comunidad.</p>
         </div>
     </section>
 
@@ -33,15 +33,9 @@
                     </div>
                 </li>
                 <li class="course">
-                    <div class="course-title">Bajo</div>
-                    <div class="course-description">
-                        <p>Aprende a tocar Bajo Electrico desde cero o mejora tus habilidades.</p>
-                    </div>
-                </li>
-                <li class="course">
                     <div class="course-title">Guitarra</div>
                     <div class="course-description">
-                        <p>Domina la guitarra acústica y eléctrica.</p>
+                        <p>Domina la guitarra acústica y eléctrica. Enfoque en música cristiana.</p>
                     </div>
                 </li>
                 <li class="course">
@@ -80,30 +74,40 @@
         </div>
     </section>
 
-    <section id="payment">
-        <div class="container">
-            <h2>Información de Pago</h2>
-            <p>Luego de completar el formulario puedes elegir alguno de los siguientes metodos de pago. Da click en la opcion que te sea mas conveniente o contactate con nosotros por cualquier duda. Aclarar que el pago es para Escuela Ketoret.p</p>
-            <ul>
-                <li class="course">
-                    <div class="course-title">Transferencia Bancaria</div>
-                    <div class="course-description">
-                        <p>Fundacion Internacional Hefzivah:
-                            Nit 901.554.193-9, Banco Caja Social, Cuenta Corriente # 21004178243 | Cuota: Usd $30 + 3% fee | Matricula: Usd $10 + 3% fee. 
-                        </p>
-                    </div>
-                    <li class="course">
-                        <div class="course-title">Paypal</div>
-                        <div class="course-description">
-                            <p>Keilahefzivah2016@gmail.com | Cuota: Usd $30 + 3% fee | Matricula: Usd $10 + 3% fee.</p>
-                        </div>
-            </ul>
+    <section class="pagos">
+        <h2>Opciones de Pago</h2>
+
+        <!-- Opción de Transferencia Bancaria -->
+        <div class="opcion-pago">
+            <h3 onclick="toggleSeccion('transferencia')">Transferencia Bancaria ▼</h3>
+            <div id="transferencia" class="contenido-pago">
+                <p>Para pagar mediante transferencia bancaria, utiliza los siguientes datos:</p>
+                <ul>
+                    <li><strong>Beneficiario:</strong> Fundacion Internacional Hefzivah</li>
+                    <li><strong>Banco:</strong> Banco Caja Social</li>
+                    <li><strong>Cuenta corriente:</strong> # 21004178243</li>
+                    <li><strong>Nit:</strong> 901.554.193-9</li>
+                    
+                </ul>
+            </div>
         </div>
-    </section>
+
+        <!-- Opción de PayPal -->
+        <div class="opcion-pago">
+            <h3 onclick="toggleSeccion('paypal')">Pago con PayPal ▼</h3>
+            <div id="paypal" class="contenido-pago">
+                <p>Selecciona el tipo de pago que deseas realizar:</p>
+                <div class="botones-paypal">
+                    <a href="https://www.paypal.com/invoice/p/#F5F5LMVL3XVDQSEE" target="_blank" class="boton-paypal">Pagar Inscripción</a>
+                    <a href="https://www.paypal.com/invoice/p/#MWCRJDVQY3AGUF57" target="_blank" class="boton-paypal">Pagar Matrícula</a>
+                </div>
+            </div>
+        </div>
+    </section> 
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Escuela Ketoret Worldwide. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Instituto Ketoret. Todos los derechos reservados.</p>
         </div>
     </footer>
 
